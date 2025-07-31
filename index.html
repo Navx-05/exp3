@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="light-theme">
+  <header class="header glass">
+    <h1>Admin Dashboard</h1>
+    <button id="theme-toggle" class="theme-btn">🌙</button>
+  </header>
+
+  <div class="dashboard">
+    <aside class="sidebar glass">
+      <nav>
+        <ul>
+          <li>Overview</li>
+          <li>Analytics</li>
+          <li>Users</li>
+          <li>Settings</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <section class="cards">
+        <div class="card glass">Total Sales<br><strong>₹20K</strong></div>
+
+        <div class="card glass">Active Users<br><strong>1,250</strong></div>
+        <div class="card glass">New Orders<br><strong>320</strong></div>
+        <div class="card glass">Support Tickets<br><strong>45</strong></div>
+      </section>
+
+      <section class="charts">
+        <div class="chart glass">
+          <canvas id="salesChart"></canvas>
+        </div>
+        <div class="chart glass">
+          <canvas id="usersChart"></canvas>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
