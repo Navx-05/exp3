@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Admin Dashboard</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="light">
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>Dashboard</h1>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">Analytics</a>
+            <a href="#">Reports</a>
+            <a href="#">Settings</a>
+        </nav>
+        <button id="theme-toggle">🌙</button>
+    </header>
 
-<header class="header">
-  <h1>Dashboard</h1>
-  <button id="theme-toggle">🌙 Dark Mode</button>
-</header>
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="card">Total Sales: $12,300</section>
+        <section class="card">New Users: 230</section>
+        <section class="card">Active Orders: 58</section>
+        <section class="card">Pending Issues: 12</section>
+    </main>
 
-<nav class="sidebar">
-  <ul>
-    <li>🏠 Home</li>
-    <li>📊 Analytics</li>
-    <li>📦 Products</li>
-    <li>⚙ Settings</li>
-  </ul>
-</nav>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 My Admin Dashboard</p>
+    </footer>
 
-<main class="main">
-  <section class="card">Card 1 Content</section>
-  <section class="card">Card 2 Content</section>
-  <section class="card">Card 3 Content</section>
-</main>
-
-<footer class="footer">
-  &copy; 2025 Admin Panel
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
