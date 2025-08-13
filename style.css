@@ -82,6 +82,26 @@ body {
 .main-content {
     grid-area: main;
     padding: 1rem;
+
+    /* Grid layout */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns always */
+    grid-auto-rows: auto;
+    grid-auto-flow: row; /* Fills down first, then across */
+    gap: 1rem;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+    transition: background 0.4s ease;
+}
+
+/* .main-content {
+    grid-area: main;
+    padding: 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
@@ -92,7 +112,7 @@ body {
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.15);
-    transition: background 0.4s ease;
+    transition: background 0.4s ease; */
 }
 
 /* --- Footer --- */
@@ -112,3 +132,4 @@ body {
         margin-top: 0.5rem;
     }
 }
+
